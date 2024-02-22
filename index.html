@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>World Clock - Kinga Miśkiewicz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="/">World Clock</a></h1>
+
+      <select id="city">
+        <option value="">Select a city...</option>
+        <option value="current">My current location</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Pacific/Auckland">Auckland</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div>
+            <div class="time"></div>
+          </div>
+        </div>
+
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris 🇫🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div>
+            <div class="time"></div>
+          </div>
+        </div>
+
+        <div class="city" id="maldives">
+          <div>
+            <h2>Maldives 🇲🇻</h2>
+            <div class="date"></div>
+          </div>
+          <div>
+            <div class="time"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      This project was coded by <strong>Kinga Miśkiewicz</strong> and is<a
+        href="https://github.com/kiyooteru/world-clock"
+        target="_blank"
+      >
+        open-sourced on GitHub.</a
+      >
+    </footer>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
